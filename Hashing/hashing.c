@@ -1,6 +1,3 @@
-// Grupo: Ayla Rodrigues, Douglas Mareli, Sofia Kitaeva
-// Exercicio de Hashing - Estrutura de dados
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -73,10 +70,10 @@ void imprimirAluno(char *nomeArq, int mat) {
 	}
 	
 	if(a.disponibilidade == 1) {
-		printf("Esse matrÌcula n„o est· no Hashing");
+		printf("Esse matr√≠cula n√£o est√° no Hashing");
 	} else {
-		printf("\n\tInformaÁıes do Aluno:\n\n");
-		printf("MatrÌcula: %d\n",a.mat);
+		printf("\n\tInforma√ß√µes do Aluno:\n\n");
+		printf("Matr√≠cula: %d\n",a.mat);
 		printf("Nome: %s \n",a.nome);
 		printf("Curso: %s\n",a.curso);
 	}
@@ -115,8 +112,8 @@ void ImprimirHashing(char *nomeArq) {
 		fseek(arq, pos * sizeof(Registro), SEEK_SET);
 		fread(&a, sizeof(Registro), 1, arq);
 		if(a.disponibilidade == 0) {
-			printf("\n\tInformaÁıes do Aluno:\n\n");
-			printf("MatrÌcula: %d\n",a.mat);
+			printf("\n\tInforma√ß√µes do Aluno:\n\n");
+			printf("Matr√≠cula: %d\n",a.mat);
 			printf("Nome: %s \n",a.nome);
 			printf("Curso: %s\n",a.curso);
 		}
@@ -139,7 +136,7 @@ int main()
 	
 	while(opcao!=4)
 	{
-		printf("O que deseja fazer?\n 1.Inserir novo aluno\n 2.Imprimir as informaÁıes de um determinado aluno\n 3.Imprimir tabela Hash\n 4.Sair\n\n>");
+		printf("O que deseja fazer?\n 1.Inserir novo aluno\n 2.Imprimir as informa√ß√µes de um determinado aluno\n 3.Imprimir tabela Hash\n 4.Sair\n\n>");
 		scanf("%d", &opcao);
 		printf("\n");
 		
@@ -166,7 +163,7 @@ int main()
 		else if(opcao == 2)//imprimir info
 		{
 			int mat, pos;
-			printf("> Qual o matrÌcula do aluno?\n");
+			printf("> Qual o matr√≠cula do aluno?\n");
 			scanf("%d", &mat);
 			
 			printf("\n-------------------------------\n");
@@ -185,7 +182,7 @@ int main()
 		system("pause");
 		system("cls");
 	}
-	printf("O usu·rio saiu!\n");
+	printf("O usu√°rio saiu!\n");
 
 	return 0;
 }
