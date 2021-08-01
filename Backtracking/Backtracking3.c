@@ -1,6 +1,3 @@
-//Grupo: Ayla Rodrigues, Douglas Mareli, Sofia Kitaeva
-//Backtracking exercício 3
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
