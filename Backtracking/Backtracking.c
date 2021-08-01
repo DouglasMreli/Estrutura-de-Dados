@@ -1,6 +1,3 @@
-//Grupo: Ayla Rodrigues, Douglas Mareli, Sofia Kitaeva
-//Backtracking exercício 1
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -39,10 +36,10 @@ int main() {
 	
 	int n;
 	
-	printf("Digite o tamanho da combinação:");
+	printf("Digite o tamanho da combinaÃ§Ã£o:");
 	scanf("%d",&n);	
 	printf("\n");
-	printf("Combinações entre 'a', 'e' e 'i' em que o número de a's é maior que de e's + i's:\n");
+	printf("CombinaÃ§Ãµes entre 'a', 'e' e 'i' em que o nÃºmero de a's Ã© maior que de e's + i's:\n");
 	
 	char* vet=(char *)malloc(n * sizeof(char));
 	char vetAux[3] = "aei";
