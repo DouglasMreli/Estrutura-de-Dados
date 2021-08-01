@@ -1,6 +1,3 @@
-// Grupo: Ayla Rodrigues, Douglas Mareli, Sofia Kitaeva
-// Exercicio de Heap - Estrutura de dados
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -149,7 +146,7 @@ int main(){
 		system("cls");
 	}
 		
-		printf("O usu·rio saiu!\n");
+		printf("O usu√°rio saiu!\n");
 		
 	return 0;
 }
