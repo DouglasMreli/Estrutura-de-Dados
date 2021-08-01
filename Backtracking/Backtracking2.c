@@ -1,6 +1,3 @@
-// Grupo: Ayla Rodrigues, Douglas Mareli, Sofia Kitaeva
-// Exercicio de Backtracking 2 - Estrutura de dados
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
