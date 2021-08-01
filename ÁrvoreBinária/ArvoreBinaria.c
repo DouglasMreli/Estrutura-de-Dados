@@ -1,6 +1,3 @@
-// Grupo: Ayla Rodrigues, Douglas Mareli, Sofia Kitaeva
-// Exercicio 2 - Estrutura de dados
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -193,9 +190,9 @@ void VerificarCheia(arvore *a) {
 	int h = AlturaArvore(a);
 
 	if( numElem == pow(2, h)- 1) {
-		printf("Essa ·rvore est· cheia.\n");
+		printf("Essa √°rvore est√° cheia.\n");
 	} else {
-		printf("Essa ·rvore n„o est· cheia.\n");
+		printf("Essa √°rvore n√£o est√° cheia.\n");
 	}
 }
 
@@ -211,21 +208,21 @@ int main() {
 
 	while(opcao!=9)
 	{
-		printf("O que deseja fazer?\n 1.Ler ·rvore\n 2.Imprimir ·rvore\n 3.Verificar existÍncia de um elemento\n 4.Contar n˙mero de elementos\n 5.Imprimir os nÛs-folha da ·rvore\n 6.Verificar balanceamento da ·rvore\n 7.Verificar se a ·rvore È cheia\n 8.Imprimir nivel de um nÛ\n 9.Sair\n");
+		printf("O que deseja fazer?\n 1.Ler √°rvore\n 2.Imprimir √°rvore\n 3.Verificar exist√™ncia de um elemento\n 4.Contar n√∫mero de elementos\n 5.Imprimir os n√≥s-folha da √°rvore\n 6.Verificar balanceamento da √°rvore\n 7.Verificar se a √°rvore √© cheia\n 8.Imprimir nivel de um n√≥\n 9.Sair\n");
 		scanf("%d", &opcao);
 		printf("\n");
 		
 		if (opcao==1)//leitua da arvore
 		{
 			printf("-----------\n");
-			printf("¡rvore Lida\n");
+			printf("√Årvore Lida\n");
 			printf("-----------\n");
 			a = LerArvore(arq, a);
 		}
 		else if(opcao==2)//impressao arvore
 		{
 			int escolha=0;
-			printf("Como deseja que seja feita a impress„o da ·rvore?\n 1.PrÈ-Ordem\n 2.Em-Ordem\n 3.PÛs-Ordem\n 4.Em largura\n");
+			printf("Como deseja que seja feita a impress√£o da √°rvore?\n 1.Pr√©-Ordem\n 2.Em-Ordem\n 3.P√≥s-Ordem\n 4.Em largura\n");
 			scanf("%d", &escolha);
 			if (escolha==1)
 			{
@@ -260,20 +257,20 @@ int main() {
 		else if(opcao==3)//verificar existencia
 		{
 			int x;
-			printf("Qual o n˙mero que deseja verificar na ·rvore?\n");
+			printf("Qual o n√∫mero que deseja verificar na √°rvore?\n");
 			scanf("%d", &x);
 			x = Existe(a, x);
 
 			if (x==1)
 			{
 				printf("----------------------------\n");
-				printf("Esse n˙mero existe na ·rvore\n");
+				printf("Esse n√∫mero existe na √°rvore\n");
 				printf("----------------------------\n");
 			}
 			else
 			{
 				printf("--------------------------------\n");
-				printf("Esse n˙mero n„o existe na ·rvore\n");
+				printf("Esse n√∫mero n√£o existe na √°rvore\n");
 				printf("--------------------------------\n");
 			}
 		}
@@ -281,7 +278,7 @@ int main() {
 		{
 			int numElementos = ContarElementos(a);
 			printf("-------------------------\n");
-			printf("A ·rvore tem %d elementos\n", numElementos);
+			printf("A √°rvore tem %d elementos\n", numElementos);
 			printf("-------------------------\n");
 		}
 		else if(opcao==5)//imprimir nos folhas 
@@ -295,15 +292,15 @@ int main() {
 			int balanc = VerificaBalanceamento(a);
 			if(balanc ==0) {
 				printf("------------------------\n");
-				printf("A ·rvore est· balanceada.\n");
+				printf("A √°rvore est√° balanceada.\n");
 				printf("------------------------\n");
 			}else {
 				printf("----------------------------\n");
-				printf("A ·rvore n„o est· balanceada.\n");
+				printf("A √°rvore n√£o est√° balanceada.\n");
 				printf("----------------------------\n");
 			}
 		}
-		else if(opcao==7)//verificar se È cheia
+		else if(opcao==7)//verificar se √© cheia
 		{
 			printf("--------------------------\n");
 			VerificarCheia(a);
@@ -312,7 +309,7 @@ int main() {
 		else if(opcao==8)//imprimir nivel de um no
 		{
 			int no;
-			printf("De qual nÛ vocÍ deseja imprimir o nÌvel?\n");
+			printf("De qual n√≥ voc√™ deseja imprimir o n√≠vel?\n");
 			scanf("%d",&no);
 			printf("\n----------\n");
 			NivelNo(a,no,0);
@@ -323,7 +320,7 @@ int main() {
 		system("cls");
 	}
 		a = Destruir(a);
-		printf("O usu·rio saiu!\n");
+		printf("O usu√°rio saiu!\n");
 		fclose(arq);
 	return 0;
 }
